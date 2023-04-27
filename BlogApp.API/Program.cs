@@ -1,6 +1,7 @@
 using BlogApp.API.Middlewares.ExceptionHandler.Extensions;
 using BlogApp.API.Middlewares.RequestResponseLogger.Extensions;
 using BlogApp.API.Swagger.Extensions;
+using BlogApp.Application.Authentication.Extensions;
 using BlogApp.Application.Extensions;
 using BlogApp.Application.Mappings;
 using BlogApp.Infrastructure.Extensions;
@@ -33,6 +34,10 @@ try
     builder.Services.AddUnitOfWork();
 
     builder.Services.AddServices();
+
+    builder.Services.AddJwtOptionsConfiguration(configuration);
+    builder.Services.AddJwtAuthentication();
+    builder.Services.AddJwtServices();
 
     builder.Services.AddMapster();
 

@@ -88,6 +88,15 @@ namespace BlogApp.Shared.Localizations.Culture.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed to generate access token during authentication..
+        /// </summary>
+        public static string FailedToGenerateAccessTokenException {
+            get {
+                return ResourceManager.GetString("FailedToGenerateAccessTokenException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Failed to register an User..
         /// </summary>
         public static string FailedToRegisterUserExecption {

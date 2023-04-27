@@ -126,6 +126,9 @@
   <data name="Exception" xml:space="preserve">
     <value>სერვერზე მოხდა შეცდომა.</value>
   </data>
+  <data name="FailedToGenerateAccessTokenException" xml:space="preserve">
+    <value>ვერ მოხერხდა წვდომის გასაღების დაგენერირება.</value>
+  </data>
   <data name="FailedToRegisterUserExecption" xml:space="preserve">
     <value>ვერ მოხერხდა მომხმარებლის რეგისტრაცია.</value>
   </data>

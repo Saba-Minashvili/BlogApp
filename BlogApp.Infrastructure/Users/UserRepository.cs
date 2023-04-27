@@ -24,6 +24,12 @@ public class UserRepository : IUserRepository
             .FirstOrDefaultAsync(o => o.Id == userId, cancellationToken);
     }
 
+    public async Task<User> GetByEmailAsync(string email, CancellationToken cancellationToken = default)
+    {
+        return await _context.Users
+            .SingleOrDefaultAsync(u => u.Email == email, cancellationToken);
+    }
+
     public async Task CreateAsync(User user, CancellationToken cancellationToken = default)
     {
         user.CreatedAt = DateTime.Now;

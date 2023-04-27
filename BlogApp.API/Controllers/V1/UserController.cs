@@ -14,6 +14,7 @@ namespace BlogApp.API.Controllers.V1;
 [Route("api/v{version:apiVersion}/users")]
 [ApiVersion("1.0")]
 [ApiController]
+[Authorize]
 public class UserController : ControllerBase
 {
     private readonly IUserService _userService;
@@ -38,6 +39,7 @@ public class UserController : ControllerBase
     [HttpGet]
     [Produces("application/json")]
     [ProducesResponseType(typeof(IEnumerable<UserResponseModel>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [SwaggerResponseExample(StatusCodes.Status200OK, typeof(UsersExample))]
     public async Task<IEnumerable<UserResponseModel>> GetAllUsersAsync(CancellationToken cancellationToken = default)
     {
@@ -60,6 +62,7 @@ public class UserController : ControllerBase
     [Produces("application/json")]
     [ProducesResponseType(typeof(IEnumerable<UserResponseModel>), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [SwaggerResponseExample(StatusCodes.Status200OK, typeof(UserExample))]
     public async Task<UserResponseModel> GetUserByIdAsync(int userId, CancellationToken cancellationToken = default)
     {
