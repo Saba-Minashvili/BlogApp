@@ -1,4 +1,6 @@
-﻿using BlogApp.Infrastructure.Users;
+﻿using BlogApp.Infrastructure.AuthorsBlogs;
+using BlogApp.Infrastructure.Blogs;
+using BlogApp.Infrastructure.Users;
 using BlogApp.Persistence.Context;
 
 namespace BlogApp.Infrastructure;
@@ -11,9 +13,15 @@ public class UnitOfWork : IUnitOfWork
     {
         _context = context;
         UserRepository = new UserRepository(context);
+        BlogRepository = new BlogRepository(context);
+        AuthorBlogRepository = new AuthorBlogRepository(context);
     }
 
     public IUserRepository UserRepository { get; }
+
+    public IBlogRepository BlogRepository { get; }
+
+    public IAuthorBlogRepository AuthorBlogRepository { get; }
 
     public void Dispose()
     {

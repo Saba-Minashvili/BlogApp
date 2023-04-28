@@ -1,5 +1,6 @@
 using BlogApp.API.Middlewares.ExceptionHandler.Extensions;
 using BlogApp.API.Middlewares.RequestResponseLogger.Extensions;
+using BlogApp.API.Middlewares.Validation.Extensions;
 using BlogApp.API.Swagger.Extensions;
 using BlogApp.Application.Authentication.Extensions;
 using BlogApp.Application.Extensions;
@@ -33,7 +34,12 @@ try
 
     builder.Services.AddUnitOfWork();
 
+    builder.Services.AddHttpContextAccessor();
+
     builder.Services.AddServices();
+
+    builder.Services.AddValidation();
+    builder.Services.AddFilters();
 
     builder.Services.AddJwtOptionsConfiguration(configuration);
     builder.Services.AddJwtAuthentication();

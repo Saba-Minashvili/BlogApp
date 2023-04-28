@@ -117,55 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ArgumentNullException" xml:space="preserve">
-    <value>მსგავსი მნიშვნელობა ვერ იარსებებს. არარსებული არგუმენტი იქნა გადაცემული მეთოდისთვის.</value>
+  <data name="Description" xml:space="preserve">
+    <value>{PropertyName} უნდა შეიცავდეს მხოლოდ 'a-z', 'A-Z', '0-9' ან '_- ' სიმბოლოებს.</value>
   </data>
-  <data name="BlogNotFoundException" xml:space="preserve">
-    <value>ბლოგი ვერ მოიძებნა.</value>
+  <data name="Email" xml:space="preserve">
+    <value>{PropertyName} არ არის ვალიდური ელექტრონული ფოსტის მისამართი.</value>
   </data>
-  <data name="BlogsNotFoundException" xml:space="preserve">
-    <value>ბლოგები ვერ მოიძებნა.</value>
+  <data name="MaximumLength" xml:space="preserve">
+    <value>{PropertyName} უნდა შეიცავდეს {MaxLength}-ს ან ნაკლებ სიმბოლოს.</value>
   </data>
-  <data name="EmailAlreadyExistsException" xml:space="preserve">
-    <value>მომხმარებელი მსგავსი ფოსტის მისამართით უკვე არსებობს.</value>
+  <data name="MinimumLength" xml:space="preserve">
+    <value>{PropertyName} უნდა შეიცავდეს {MinLength}-ს ან მეტ სიმბოლოს.</value>
   </data>
-  <data name="EmailNotFoundException" xml:space="preserve">
-    <value>მომხმარებელი ამ ფოსტის მისამართით: "{0}" არ მოიძებნა.</value>
+  <data name="Name" xml:space="preserve">
+    <value>{PropertyName} უნდა შეიცავდეს მხოლოდ 'a-z', 'A-Z' და '-' სიმბოლოებს.</value>
   </data>
-  <data name="Exception" xml:space="preserve">
-    <value>სერვერზე მოხდა შეცდომა.</value>
+  <data name="NotEmpty" xml:space="preserve">
+    <value>{PropertyName} არ შეიძლება იყოს ცარიელი ან ჰქონდეს არარსებული მნიშვნელობა.</value>
   </data>
-  <data name="FailedToCreateBlogException" xml:space="preserve">
-    <value>ვერ მოხერხდა ბლოგის დამატება.</value>
+  <data name="NotNull" xml:space="preserve">
+    <value>{PropertyName}-ს არ შეიძლება ჰქონდეს არარსებული მნიშნველობა.</value>
   </data>
-  <data name="FailedToGenerateAccessTokenException" xml:space="preserve">
-    <value>ვერ მოხერხდა წვდომის გასაღების დაგენერირება.</value>
+  <data name="Password" xml:space="preserve">
+    <value>{PropertyName} უნდა შეიცავდეს სულ მცირე ერთ 'a-z' ასოს, სულ მცირე ერთ 'A-Z' ასოს, სულ მცირე ერთ '0-9' ციფრს და სულ მცირე ერთ განსაკუთრებულ სიმბოლოს, მაგალითად: !@#$%^&amp;*0()</value>
   </data>
-  <data name="FailedToRegisterUserExecption" xml:space="preserve">
-    <value>ვერ მოხერხდა მომხმარებლის რეგისტრაცია.</value>
-  </data>
-  <data name="FormatException" xml:space="preserve">
-    <value>მნიშვნელობა არ არის წარმოდგენილი სწორ ფორმაში.</value>
-  </data>
-  <data name="HttpRequestException" xml:space="preserve">
-    <value>ვებ მოთხოვნა ვერ განხორციელდა.</value>
-  </data>
-  <data name="InvalidCredentialsException" xml:space="preserve">
-    <value>მომხმარებლის ფოსტის მისამართი ან პაროლი არასწორია.</value>
-  </data>
-  <data name="InvalidDataException" xml:space="preserve">
-    <value>დაფიქრსირდა არავალიდური მონაცემი.</value>
-  </data>
-  <data name="UnauthorizedAccessException" xml:space="preserve">
-    <value>დაფიქსირდა არაავტორიზებული შესვლის მოთხოვნა.</value>
-  </data>
-  <data name="UserNotFoundException" xml:space="preserve">
-    <value>მომხმარებელი არ მოიძებნა.</value>
-  </data>
-  <data name="ValidationException" xml:space="preserve">
-    <value>დაფიქსირდა ერთი ან ერთზე მეტი ვალიდაციის შეცდომა.</value>
-  </data>
-  <data name="WebException" xml:space="preserve">
-    <value>დაფიქსირდა მოულოდნელი შეცდომა მოთხოვნის დამუშავების პროცესში.</value>
+  <data name="Title" xml:space="preserve">
+    <value>{PropertyName} უნდა შეიცავდეს მხოლოდ  'a-z A-Z', ',.-_'" ' and '0-9' სიმბოლოებს.</value>
   </data>
 </root>

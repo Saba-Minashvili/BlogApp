@@ -70,6 +70,24 @@ namespace BlogApp.Shared.Localizations.Culture.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A Blog was not found..
+        /// </summary>
+        public static string BlogNotFoundException {
+            get {
+                return ResourceManager.GetString("BlogNotFoundException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blogs were not found..
+        /// </summary>
+        public static string BlogsNotFoundException {
+            get {
+                return ResourceManager.GetString("BlogsNotFoundException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User with this Email already exists..
         /// </summary>
         public static string EmailAlreadyExistsException {
@@ -79,11 +97,29 @@ namespace BlogApp.Shared.Localizations.Culture.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User with this Email: &quot;{0}&quot; was not found..
+        /// </summary>
+        public static string EmailNotFoundException {
+            get {
+                return ResourceManager.GetString("EmailNotFoundException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An internal server error has occured..
         /// </summary>
         public static string Exception {
             get {
                 return ResourceManager.GetString("Exception", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to create a Blog..
+        /// </summary>
+        public static string FailedToCreateBlogException {
+            get {
+                return ResourceManager.GetString("FailedToCreateBlogException", resourceCulture);
             }
         }
         
@@ -129,6 +165,15 @@ namespace BlogApp.Shared.Localizations.Culture.Resources {
         public static string InvalidCredentialsException {
             get {
                 return ResourceManager.GetString("InvalidCredentialsException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid value or data format was passed to a method..
+        /// </summary>
+        public static string InvalidDataException {
+            get {
+                return ResourceManager.GetString("InvalidDataException", resourceCulture);
             }
         }
         

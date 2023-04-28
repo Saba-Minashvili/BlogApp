@@ -120,11 +120,23 @@
   <data name="ArgumentNullException" xml:space="preserve">
     <value>Value cannot be null. An invalid argument was passed to a method.</value>
   </data>
+  <data name="BlogNotFoundException" xml:space="preserve">
+    <value>A Blog was not found.</value>
+  </data>
+  <data name="BlogsNotFoundException" xml:space="preserve">
+    <value>Blogs were not found.</value>
+  </data>
   <data name="EmailAlreadyExistsException" xml:space="preserve">
     <value>User with this Email already exists.</value>
   </data>
+  <data name="EmailNotFoundException" xml:space="preserve">
+    <value>User with this Email: "{0}" was not found.</value>
+  </data>
   <data name="Exception" xml:space="preserve">
     <value>An internal server error has occured.</value>
+  </data>
+  <data name="FailedToCreateBlogException" xml:space="preserve">
+    <value>Failed to create a Blog.</value>
   </data>
   <data name="FailedToGenerateAccessTokenException" xml:space="preserve">
     <value>Failed to generate access token during authentication.</value>
@@ -140,6 +152,9 @@
   </data>
   <data name="InvalidCredentialsException" xml:space="preserve">
     <value>Invalid Email or Password.</value>
+  </data>
+  <data name="InvalidDataException" xml:space="preserve">
+    <value>Invalid value or data format was passed to a method.</value>
   </data>
   <data name="UnauthorizedAccessException" xml:space="preserve">
     <value>Unauthorized access has been attempted.</value>
